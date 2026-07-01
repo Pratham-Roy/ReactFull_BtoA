@@ -1,0 +1,44 @@
+# Counter Application - Vanilla JavaScript
+
+## Overview
+
+This is a simple counter application built with vanilla HTML, CSS, and JavaScript. It demonstrates fundamental web concepts and the limitations of imperative programming in vanilla JavaScript.
+
+## How It Works
+
+The application features two buckets with counters that transfer items between each other using buttons:
+
+- **Bucket 1 & Bucket 2**: Display count values
+- **Left & Right Buttons**: Transfer items between buckets
+
+## Technology Stack
+
+- **HTML**: Structure and markup
+- **CSS**: Styling and layout
+- **JavaScript**: Logic and event handling
+
+## Key Learnings
+
+### Imperative Programming Challenge
+
+In vanilla JavaScript, we must:
+
+- Manually select DOM elements
+- Define event listeners for each element
+- Update the DOM manually each time
+
+This repetitive approach makes scaling difficult as the application grows.
+
+### Why React?
+
+React solves this with:
+
+- **Single Page Application (SPA)**: Code loads once, updates components dynamically
+- **Component Reusability**: Define once, reuse everywhere
+- **Automatic Re-rendering**: React updates the DOM automatically
+
+## Files
+
+- `counter.html` - HTML structure
+- `counter.css` - Styling
+- `counter.js` - Application logic
