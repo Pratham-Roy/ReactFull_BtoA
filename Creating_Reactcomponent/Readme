@@ -1,0 +1,63 @@
+# React Component Creation Example
+
+## What I did
+
+1. Selected the root DOM container:
+   - `const root = document.querySelector("#root");`
+   - This finds the element in the HTML where React will place the UI.
+
+2. Created a heading using `React.createElement`:
+   - `const cover = React.createElement("h1", { className: "heading" }, "Best Tekken players");`
+   - The first argument is the HTML tag name as a string (`"h1"`).
+   - The second argument is props; for CSS classes we use `className` in React.
+   - The third argument is the text content.
+
+3. Created a section list using nested `React.createElement` calls:
+   - The section contains a `ul` and multiple `li` items.
+   - Each HTML element is created with a string tag name, props, and children.
+   - Example:
+     - `React.createElement("li", { className: "player1" }, "Player 1")`
+
+4. Rendered the result to the page:
+   - Instead of calling `ReactDOM.render` twice, I combined the heading and list into one React tree.
+   - Then I rendered that single tree to the root element.
+   - This is important because each `ReactDOM.render` call replaces the previous render in the same root.
+
+## Theory behind it
+
+- `React.createElement` builds a React element object.
+- React elements are lightweight descriptions of what the UI should look like.
+- React uses these descriptions to efficiently update the browser DOM.
+- This is part of how React implements the virtual DOM.
+- The virtual DOM lets React compare the current UI tree with the next UI tree and apply only the minimal changes.
+
+## Why this code works
+
+- HTML tag names must be strings in `React.createElement`.
+  - Wrong: `React.createElement(h1, ...)`
+  - Correct: `React.createElement("h1", ...)`
+- Rendering should happen once per root container for a single UI tree.
+- React uses `className` instead of `class` because `class` is a reserved keyword in JavaScript.
+
+## Why we will use JSX next
+
+- JSX looks much closer to HTML, which makes the code easier to read and write.
+- It reduces the verbosity of nested `React.createElement` calls.
+- The JSX compiler transforms JSX into the same `React.createElement` calls behind the scenes.
+- Example:
+  - `const cover = <h1 className="heading">Best Tekken players</h1>;`
+  - This is easier to understand than nested function calls.
+- Using JSX helps avoid mistakes like forgetting quotes around tag names or nesting elements incorrectly.
+
+## The role of Babel
+
+- Babel is a JavaScript compiler used to convert JSX into plain JavaScript that browsers can understand.
+- Browsers do not natively execute JSX, so Babel transforms JSX into `React.createElement` calls.
+- Babel also allows modern JavaScript features to be used safely in older browsers by compiling them down to compatible code.
+- In the next step, we will rely on Babel or a similar toolchain so the JSX code works correctly in the browser.
+
+## Next step
+
+- Convert the current code to JSX syntax.
+- Keep the same structure and behavior, but write it in a cleaner and more maintainable way.
+- JSX is the standard style for React component code in modern projects.
