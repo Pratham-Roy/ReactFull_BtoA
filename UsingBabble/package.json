@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "build": "babel script.js --out-dir lib --source-maps"
+  },
   "devDependencies": {
     "@babel/cli": "^8.0.1",
     "@babel/core": "^8.0.1",

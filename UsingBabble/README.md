@@ -22,10 +22,20 @@ Current config:
 ```js
 module.exports = {
   presets: [["@babel/preset-react", { runtime: "classic" }]],
+  sourceMaps: true,
 };
 ```
 
-This configuration tells Babel to use the React preset with the `classic` runtime.
+This configuration tells Babel to use the React preset with the `classic` runtime and to generate source maps for debugging.
+
+### How I enabled source mapping
+
+I added source mapping in two places:
+
+1. In `babel.config.js`, I set `sourceMaps: true` so Babel generates a `.map` file during compilation.
+2. In `package.json`, I added a build script using `--source-maps` so the build command creates the mapping file automatically.
+
+After running the build, Babel creates files such as `lib/script.js` and `lib/script.js.map`.
 
 ### Why `classic` runtime?
 
@@ -61,11 +71,18 @@ With UMD React, the compiled output must use the classic React transform instead
 From the `UsingBabble` folder, run:
 
 ```powershell
-npx babel script.js --out-dir lib
+npm install
+npm run build
 ```
 
-This compiles `script.js` into `lib/script.js`.
+This compiles `script.js` into `lib/script.js` and generates a source map so browser devtools can trace the compiled output back to the original JSX source.
 
+## Why source maps matter
+
+Source maps are important because they make debugging much easier. When the browser reports an error in the compiled JavaScript, the source map tells devtools which original line in `script.js` created that code. That means you can debug the readable JSX source instead of searching through generated output.
+
+In this project, source maps are enabled in `babel.config.js`, and the build command includes `--source-maps` so debugging stays straightforward.
+Make in `babel.config.js` in SourceMap: true
 ## How to view
 
 Open `cat.html` in a browser. The file includes the compiled script and renders the React element into the `#root` container.
