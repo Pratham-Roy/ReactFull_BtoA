@@ -1,0 +1,134 @@
+{
+  "players": [
+    {
+      "name": "Jin Kazama",
+      "fightingStyle": "Traditional Karate",
+      "nationality": "Japanese",
+      "height": "180 cm",
+      "weight": "78 kg",
+      "image": "./Playerimages/jin.jpg"
+    },
+    {
+      "name": "Kazuya Mishima",
+      "fightingStyle": "Mishima Style Fighting Karate",
+      "nationality": "Japanese",
+      "height": "181 cm",
+      "weight": "82 kg",
+      "image": "./Playerimages/kazuya.jpg"
+    },
+    {
+      "name": "Jun Kazama",
+      "fightingStyle": "Kazama Style Traditional Martial Arts",
+      "nationality": "Japanese",
+      "height": "170 cm",
+      "weight": "60 kg",
+      "image": "./Playerimages/jun.jpg"
+    },
+    {
+      "name": "Paul Phoenix",
+      "fightingStyle": "Judo",
+      "nationality": "American",
+      "height": "187 cm",
+      "weight": "90 kg",
+      "image": "./Playerimages/paul.jpg"
+    },
+    {
+      "name": "Marshall Law",
+      "fightingStyle": "Jeet Kune Do",
+      "nationality": "American",
+      "height": "179 cm",
+      "weight": "80 kg",
+      "image": "./Playerimages/law.jpg"
+    },
+    {
+      "name": "King",
+      "fightingStyle": "Professional Wrestling",
+      "nationality": "Mexican",
+      "height": "200 cm",
+      "weight": "100 kg",
+      "image": "./Playerimages/king.jpg"
+    },
+    {
+      "name": "Lars Alexandersson",
+      "fightingStyle": "Tekken Force Martial Arts",
+      "nationality": "Swedish",
+      "height": "183 cm",
+      "weight": "82 kg",
+      "image": "./Playerimages/lars.jpg"
+    },
+    {
+      "name": "Reina",
+      "fightingStyle": "Mishima Style Fighting Karate, Taido",
+      "nationality": "Japanese",
+      "height": "162 cm",
+      "weight": "51 kg",
+      "image": "./Playerimages/reina.jpg"
+    },
+    {
+      "name": "Nina Williams",
+      "fightingStyle": "Assassination Arts",
+      "nationality": "Irish",
+      "height": "161 cm",
+      "weight": "56 kg",
+      "image": "./Playerimages/nina.jpg"
+    },
+    {
+      "name": "Asuka Kazama",
+      "fightingStyle": "Kazama Style Traditional Martial Arts",
+      "nationality": "Japanese",
+      "height": "167 cm",
+      "weight": "57 kg",
+      "image": "./Playerimages/asuka.jpg"
+    },
+    {
+      "name": "Hwoarang",
+      "fightingStyle": "Taekwondo",
+      "nationality": "South Korean",
+      "height": "181 cm",
+      "weight": "78 kg",
+      "image": "./Playerimages/hwoarang.jpg"
+    },
+    {
+      "name": "Ling Xiaoyu",
+      "fightingStyle": "Baguazhang & Piguaquan",
+      "nationality": "Chinese",
+      "height": "157 cm",
+      "weight": "42 kg",
+      "image": "./Playerimages/xiayou.jpg"
+    },
+    {
+      "name": "Lili",
+      "fightingStyle": "Street Fighting",
+      "nationality": "Monégasque",
+      "height": "180 cm",
+      "weight": "56 kg",
+      "image": "./Playerimages/lili.jpg"
+    },
+    {
+      "name": "Bryan Fury",
+      "fightingStyle": "Kickboxing",
+      "nationality": "American",
+      "height": "186 cm",
+      "weight": "90 kg",
+      "image": "./Playerimages/bryan.jpg"
+    },
+    {
+      "name": "Yoshimitsu",
+      "fightingStyle": "Manji Ninjutsu",
+      "nationality": "Unknown",
+      "height": "180 cm",
+      "weight": "70 kg",
+      "image": "./Playerimages/yoshi.jpg"
+    },
+  
+ 
+    {
+      "name": "Steve Fox",
+      "fightingStyle": "Boxing",
+      "nationality": "British",
+      "height": "181 cm",
+      "weight": "75 kg",
+      "image": "./Playerimages/steve.jpg"
+    }
+  ]
+}

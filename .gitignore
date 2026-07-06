@@ -14,3 +14,18 @@ yarn-error.log*
 # OS files
 .DS_Store
 Thumbs.db
+
+# Images
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.ico
+**/Playerimages/
+
+# Parcel build cache and outputs
+.parcel-cache/
+**/.parcel-cache/
+dist/
+**/dist/
